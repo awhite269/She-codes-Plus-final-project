@@ -19,15 +19,16 @@ let date = now.getDate();
 let year = now.getFullYear();
 let hours = now.getHours();
 let minutes = now.getMinutes();
-const options = { hour12: true, hour: "numeric", minute: "numeric" };
-const time = now.toLocaleTimeString("en-US", options);
-h2.innerHTML = `${month} ${date}, ${year} ${hours}:${minutes}`;
+let meridiem = "AM";
+if (hours > 12) {
+  hours = hours - 12;
+  meridiem = "PM";
+}
+h2.innerHTML = `${month} ${date}, ${year} ${hours}:${minutes} ${meridiem}`;
 
 function displayWeatherCondition(response) {
-  document.querySelector("#city").h1.innerHTML = response.data.name;
-  document.querySelector("#temperature").h2.innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("h1").innerHTML = response.data.name;
+  document.querySelector("h3").innerHTML = Math.round(response.data.main.temp);
 }
 
 function searchCity(city) {
@@ -40,12 +41,6 @@ function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#search-input").value;
   searchCity(city);
-}
-
-function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let mainTemp = document.querySelector("#search-input");
-  mainTemp.innerHTML = `${temperature}°C`;
 }
 
 let searchForm = document.querySelector("#search-form");
