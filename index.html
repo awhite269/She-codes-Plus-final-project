@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Arlington, Virginia</h1>
+    <h2>time</h2>
+    <h3>
+      <span class="high"> H: </span>
+      56&degF
+      <span class="low"> L: </span>
+      53&degF
+    </h3>
+    <ul>
+      <li class="day-1">
+        <div class="box-1">
+          Sunday
+          <span> H: 0&degF </span>
+          <span> L: 0&degF </span>
+        </div>
+      </li>
+      <li class="day-2">
+        <div class="box-2">
+          Monday
+          <span> H: 0&degF </span>
+          <span> L: 0&degF </span>
+        </div>
+      </li>
+      <li class="day-3">
+        <div class="box-3">
+          Tuesday
+          <span> H: 0&degF </span>
+          <span> L: 0&degF </span>
+        </div>
+      </li>
+      <li class="day-4">
+        <div class="box-4">
+          Wednesday
+          <span> H: 0&degF </span>
+          <span> L: 0&degF </span>
+        </div>
+      </li>
+      <li class="day-5">
+        <div class="box-5">
+          Thursday
+          <span> H: 0&degF </span>
+          <span> L: 0&degF </span>
+        </div>
+      </li>
+    </ul>
+    <form action="citySearch" class="form" id="search-form">
+      <input type="text" placeholder="Enter your City" id="search-input" />
+      <input type="submit" value="Search" />
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
