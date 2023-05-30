@@ -39,6 +39,7 @@ ul {
 .codedBy {
   color: rgb(255, 145, 0);
   position: fixed;
-  margin-left: 835px;
-  margin-top: 250px;
+  margin-left: 675px;
+  margin-top: 15px;
+  font-size: 14px;
 }
