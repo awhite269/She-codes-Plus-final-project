@@ -1,12 +1,23 @@
-h1,
-h2,
-h3,
-h4 {
+#temperature,
+#city,
+#description,
+#humidity,
+#wind,
+#date {
   text-align: center;
-  position: relative;
 }
-h3 {
-  padding-bottom: 30px;
+#temperature {
+  font-size: 50px;
+}
+#city {
+  font-size: 30px;
+}
+#icon {
+  margin-left: 430px;
+  margin-top: 5px;
+}
+h1 {
+  text-align: center;
 }
 ul {
   list-style-type: none;
