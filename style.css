@@ -5,22 +5,28 @@
 #wind,
 #date {
   text-align: center;
+  font-family: "Titillium Web", sans-serif;
 }
 #temperature {
   font-size: 50px;
 }
 #city {
-  font-size: 30px;
+  font-size: 50px;
 }
 #icon {
-  margin-left: 430px;
-  margin-top: 5px;
+  margin: auto;
+  position: fixed;
+  margin-left: 1000px;
 }
 h1 {
   text-align: center;
 }
 ul {
   list-style-type: none;
+}
+.descriptionOne {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
 }
 .high,
 .low {
@@ -46,11 +52,11 @@ ul {
   width: fit-content;
   padding: 25px;
   margin: auto;
+  font-family: "Titillium Web", sans-serif;
 }
 .codedBy {
   color: rgb(255, 145, 0);
-  position: fixed;
-  margin-left: 675px;
+  block-size: auto;
   margin-top: 15px;
   font-size: 14px;
 }
