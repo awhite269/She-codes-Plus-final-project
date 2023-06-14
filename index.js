@@ -1,6 +1,5 @@
 function formatDate(timestamp) {
   let now = new Date(timestamp);
-  let h1 = document.querySelector("h1");
   let months = [
     "January",
     "February",
@@ -25,7 +24,6 @@ function formatDate(timestamp) {
     hours = hours - 12;
     meridiem = "PM";
   }
-  h1.innerHTML = `${month} ${date}, ${year} ${hours}:${minutes} ${meridiem}`;
   return `${month} ${date}, ${year} ${hours}:${minutes} ${meridiem}`;
 }
 formatDate(new Date());
