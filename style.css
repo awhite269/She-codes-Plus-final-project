@@ -47,6 +47,7 @@ li {
 .box-3,
 .box-4,
 .box-5 {
+  display: inline-block;
   height: 50px;
   width: 500px;
   background-color: #ffff;
