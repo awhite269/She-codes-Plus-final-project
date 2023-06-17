@@ -13,16 +13,26 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+     <form action="citySearch" class="form" id="search-form">
+      <input type="text" placeholder="Enter your City" id="search-input" />
+      <input type="submit" value="Search" />
+    </form>
+    <div class="weatherOverview">
     <div id="city"></div>
     <div id="date"></div>
     <div id="temperature"></div>
-    <img id="icon" />
-    <div id="description"></div>
-    <div id="humidity"></div>
-    <div class="descriptionOne">Humidity</div>
-    <div id="wind"></div>
-    <div class="descriptionTwo">Wind Speed</div>
     <ul>
+      <li>°F</span></li>
+    </ul>
+    <img id="icon"/>
+    <div id="description"></div>
+   <div class="HumidityWind">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> mph</li>
+              </ul>
+            </div>
+            </div>
       <li class="day-1">
         <div class="box-1">
           Sunday
@@ -59,10 +69,6 @@
         </div>
       </li>
     </ul>
-    <form action="citySearch" class="form" id="search-form">
-      <input type="text" placeholder="Enter your City" id="search-input" />
-      <input type="submit" value="Search" />
-    </form>
     <a
       class="codedBy"
       href="https://github.com/awhite269/She-codes-Plus-final-project"

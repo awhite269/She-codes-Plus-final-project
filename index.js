@@ -20,11 +20,11 @@ function formatDate(timestamp) {
   let hours = now.getHours();
   let minutes = now.getMinutes();
   let meridiem = "AM";
-  if (hours > 12) {
+  if ((hours) => 12) {
     hours = hours - 12;
     meridiem = "PM";
   }
-  return `${month} ${date}, ${year} ${hours}:${minutes} ${meridiem}`;
+  return `${month} ${date}, ${year} | ${hours}:${minutes} ${meridiem}`;
 }
 formatDate(new Date());
 
@@ -89,11 +89,5 @@ function displayCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
-
-// let fahrenheitLink = document.querySelector("#fahrenheit-link");
-// fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-// let celsiusLink = document.querySelector("#celsius-link");
-// celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Null");
