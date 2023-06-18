@@ -1,19 +1,23 @@
 .weatherOverview {
   text-align: center;
   font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
 }
 #temperature {
-  font-size: 50px;
+  font-size: 70px;
 }
 #city {
-  font-size: 50px;
+  font-size: 70px;
 }
 #icon {
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
 }
-#description {
-  margin-top: 5px;
+#description:first-letter {
+  text-transform: capitalize;
+}
+form {
+  margin-top: 200px;
 }
 input {
   font-family: "Titillium Web", sans-serif;
@@ -37,8 +41,8 @@ li {
   margin: 0;
   padding: 0;
 }
-#description:first-letter {
-  text-transform: capitalize;
+.search-input {
+  border-color: #bbe4e9;
 }
 .humidityWind {
   display: inline-block;

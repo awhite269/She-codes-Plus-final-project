@@ -42,7 +42,6 @@ function displayWeatherCondition(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
-  let timeElement = document.querySelector("time");
 
   celsiusTemperature = response.data.temperature.current;
 
@@ -56,7 +55,6 @@ function displayWeatherCondition(response) {
   //set weather icon
   iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.description);
-  timeElement.innerHTML = response.data.time;
 }
 
 function searchCity(city) {
