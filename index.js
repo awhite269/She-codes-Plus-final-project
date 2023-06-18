@@ -35,17 +35,20 @@ function displayWeatherCondition(response) {
   );
 
   let cityElement = document.querySelector("#city");
+  let countryElement = document.querySelector("#country");
   let dateElement = document.querySelector("#date");
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+  let timeElement = document.querySelector("time");
 
   celsiusTemperature = response.data.temperature.current;
 
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.city;
+  countryElement.innerHTML = response.data.country;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed * 3.6);
@@ -53,6 +56,7 @@ function displayWeatherCondition(response) {
   //set weather icon
   iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.description);
+  timeElement.innerHTML = response.data.time;
 }
 
 function searchCity(city) {
