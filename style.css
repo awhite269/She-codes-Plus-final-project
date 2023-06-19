@@ -10,14 +10,11 @@
   font-size: 70px;
 }
 #icon {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 #description:first-letter {
   text-transform: capitalize;
-}
-form {
-  margin-top: 200px;
 }
 input {
   font-family: "Titillium Web", sans-serif;
